@@ -18,9 +18,11 @@ import Register from './components/Register';
 import Login from './components/Login';
 import Home from './components/Home';
 
+import './App.css';
 
 import 'bootstrap/dist/css/bootstrap.min.css';
 import { PrivateRoute } from './components/PrivateRoute';
+import Welcome from './components/Welcome';
 
 if (localStorage.jwtToken) {
   setAuthToken(localStorage.jwtToken);
@@ -64,15 +66,13 @@ class App extends Component {
         <Router>
           <div>
             <Navbar />
-            <div className="jumbotron bg-transparent">
-
-            </div>
             <Switch>
-              <Route exact path="/" render={() => (<Redirect to="/home" />)} />
+              <Route exact path="/" render={() => (<Redirect to="/welcome" />)} />
               {/* <Route path="/home" component={Home} /> */}
               <PrivateRoute path="/home" component={Home} />
               <Route path="/register" component={Register} />
               <Route path="/login" component={Login} />
+              <Route path="/welcome" component={Welcome} />
             </Switch>
           </div>
         </Router>

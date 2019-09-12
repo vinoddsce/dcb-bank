@@ -1,6 +1,9 @@
 .App {
   text-align: center;
+  background-image: url(./assets/idea_express_logo.png);
 }
+
+
 
 .App-logo {
   animation: App-logo-spin infinite 20s linear;

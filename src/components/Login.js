@@ -4,6 +4,8 @@ import { connect } from 'react-redux';
 import { loginUser } from '../actions/authentication';
 import classnames from 'classnames';
 
+import './Login.css';
+
 class Login extends Component {
 
     constructor() {
@@ -54,7 +56,7 @@ class Login extends Component {
         const { errors } = this.state;
         return (
 
-            <div className="jumbotron">
+            <div className="Login-component">
                 <div className="container">
                     <div className="col-sm-8 col-sm-offset-2">
                         <div className="col-md-6 col-md-offset-3">

@@ -5,6 +5,8 @@ import { withRouter } from 'react-router-dom';
 import { registerUser } from '../actions/authentication';
 import classnames from 'classnames';
 
+import './Register.css';
+
 class Register extends Component {
 
     constructor() {
@@ -58,7 +60,7 @@ class Register extends Component {
         const { errors } = this.state;
         return (
 
-            <div className="jumbotron">
+            <div className="Register-component">
                 <div className="container">
                     <div className="col-sm-8 col-sm-offset-2">
                         <div className="col-md-6 col-md-offset-3">

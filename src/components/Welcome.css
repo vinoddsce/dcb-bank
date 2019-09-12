@@ -1,0 +1,10 @@
+.Welcome-component {
+    background-image: url(../assets/banking-backgroung.jpg);
+    /* Full height */
+      height: 500px; 
+  
+      /* Center and scale the image nicely */
+      background-position: center;
+      background-repeat: repeat;
+      background-size: cover;
+}
