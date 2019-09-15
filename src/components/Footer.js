@@ -4,7 +4,7 @@ import React from 'react';
 import './Footer.css';
 
 import { Link, NavLink } from 'react-router-dom';
-import expressIdeaLogo from '../assets/idea_express_logo.gif';
+import expressIdeaLogo from '../assets/ideaxpress_logo.png';
 
 class Footer extends React.Component {
   render() {

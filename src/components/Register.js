@@ -4,8 +4,11 @@ import PropTypes from 'prop-types';
 import { withRouter } from 'react-router-dom';
 import { registerUser } from '../actions/authentication';
 import classnames from 'classnames';
-
 import './Register.css';
+
+const Patterns = {
+    UserNameAllowedCharacters: /^[a-z][a-z\s]*$/,
+}
 
 class Register extends Component {
 
@@ -13,19 +16,41 @@ class Register extends Component {
         super();
         this.state = {
             name: '',
+            mobile: '',
             email: '',
             password: '',
             password_confirm: '',
-            errors: {}
+            errors: {},
+            bankSelected: '',
+            bankList: [
+                { value: '', name: 'Select Bank' },
+                { value: 'DCB', name: 'DCB Bank' },
+                { value: 'HDFC', name: 'HDFC Bank' }
+            ],
         }
+        this.handleDropdownChange = this.handleDropdownChange.bind(this);
         this.handleInputChange = this.handleInputChange.bind(this);
         this.handleSubmit = this.handleSubmit.bind(this);
+        this.validate = this.validate.bind(this);
+    }
+
+    handleDropdownChange = (e) => {
+        this.setState({
+            bankSelected: e.target.value,
+            email: '',
+        })
+        console.log("dropdown" + this.state.bankSelected);
     }
 
     handleInputChange(e) {
         this.setState({
             [e.target.name]: e.target.value
-        })
+        });
+    }
+
+    validate(event) {
+        event.preventDefault();
+        const val = event.target.value;
     }
 
     handleSubmit(e) {
@@ -57,7 +82,7 @@ class Register extends Component {
     }
 
     render() {
-        const { errors } = this.state;
+        const { errors, bankSelected, bankList } = this.state;
         return (
 
             <div className="Register-component">
@@ -73,55 +98,61 @@ class Register extends Component {
                                         className={classnames('form-control form-control-lg', {
                                             'is-invalid': errors.name
                                         })}
+                                        maxLength="30"
                                         name="name"
                                         onChange={this.handleInputChange}
+                                        onKeyUp={this.validate}
                                         value={this.state.name}
                                     />
                                     {errors.name && (<div className="invalid-feedback">{errors.name}</div>)}
                                 </div>
-                                <div className="form-group">
+                                {<div className="form-group">
                                     <input
-                                        type="email"
-                                        placeholder="Email"
+                                        type="text"
+                                        placeholder="Mobile Number"
                                         className={classnames('form-control form-control-lg', {
-                                            'is-invalid': errors.email
+                                            'is-invalid': errors.name
                                         })}
-                                        name="email"
+                                        name="mobile"
+                                        maxLength="10"
                                         onChange={this.handleInputChange}
-                                        value={this.state.email}
+                                        value={this.state.mobile}
                                     />
-                                    {errors.email && (<div className="invalid-feedback">{errors.email}</div>)}
-                                </div>
+                                    {errors.name && (<div className="invalid-feedback">{errors.name}</div>)}
+                                </div>}
                                 <div className="form-group">
-                                    <input
-                                        type="password"
-                                        placeholder="Password"
+                                    <select
                                         className={classnames('form-control form-control-lg', {
-                                            'is-invalid': errors.password
+                                            'is-invalid': errors.name
                                         })}
-                                        name="password"
-                                        onChange={this.handleInputChange}
-                                        value={this.state.password}
-                                    />
-                                    {errors.password && (<div className="invalid-feedback">{errors.password}</div>)}
-                                </div>
-                                <div className="form-group">
-                                    <input
-                                        type="password"
-                                        placeholder="Confirm Password"
-                                        className={classnames('form-control form-control-lg', {
-                                            'is-invalid': errors.password_confirm
+                                        name="bankSelected"
+                                        value={bankSelected}
+                                        onChange={this.handleDropdownChange}
+                                    >
+                                        {bankList.map((e, key) => {
+                                            return <option value={e.value} key={key} >{e.name}</option>;
                                         })}
-                                        name="password_confirm"
-                                        onChange={this.handleInputChange}
-                                        value={this.state.password_confirm}
-                                    />
-                                    {errors.password_confirm && (<div className="invalid-feedback">{errors.password_confirm}</div>)}
+                                    </select>
                                 </div>
-                                <div className="form-group">
-                                    <button type="submit" className="btn btn-primary">
-                                        Register User
-                    </button>
+                                {bankSelected && bankSelected !== '' && bankSelected !== undefined &&
+                                    <div className="form-group">
+                                        <input
+                                            type="email"
+                                            placeholder="Email"
+                                            className={classnames('form-control form-control-lg', {
+                                                'is-invalid': errors.email
+                                            })}
+                                            name="email"
+                                            onChange={this.handleInputChange}
+                                            value={this.state.email}
+                                        />
+                                        {errors.email && (<div className="invalid-feedback">{errors.email}</div>)}
+                                    </div>
+                                }
+                                <div className="">
+                                    <button type="submit" className="btn btn-primary btn-block">
+                                        Sign Up
+                                    </button>
                                 </div>
                             </form>
                         </div>

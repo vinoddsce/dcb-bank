@@ -8,3 +8,7 @@
       background-repeat: repeat;
       background-size: cover;
   }
+
+  .btn {
+    height: 45px;
+  }

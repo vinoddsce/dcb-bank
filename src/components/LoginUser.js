@@ -6,7 +6,7 @@ import classnames from 'classnames';
 
 import './Login.css';
 
-class Login extends Component {
+class LoginUser extends Component {
 
     constructor() {
         super();
@@ -16,10 +16,10 @@ class Login extends Component {
             email: '',
             password: '',
             errors: {},
-            bankList : [
+            bankList: [
                 { value: '', name: 'Select Bank' },
                 { value: 'DCB', name: 'DCB Bank' },
-                { value: 'HDFC', name: 'HDFC Bank' }            
+                { value: 'HDFC', name: 'HDFC Bank' }
             ],
         }
         this.handleDropdownChange = this.handleDropdownChange.bind(this);
@@ -42,7 +42,7 @@ class Login extends Component {
             email: '',
             password: '',
             signInBank: '',
-            
+
         })
     }
 
@@ -89,7 +89,7 @@ class Login extends Component {
                         <div className="col-md-6 col-md-offset-3">
                             <h2 style={{ marginBottom: '40px' }}>Login</h2>
                             <form onSubmit={this.handleSubmit}>
-                                <div className="form-group">
+                                {/* <div className="form-group">
                                     <select
                                         className={classnames('form-control form-control-lg', {
                                             'is-invalid': errors.name
@@ -103,7 +103,7 @@ class Login extends Component {
                                         <option value="Mentor">Mentor</option>
                                     </select> 
                                     {errors.userType && (<div className="invalid-feedback">{errors.userType}</div>)}
-                                </div>
+                                </div> */}
                                 <div className="form-group">
                                     <select
                                         className={classnames('form-control form-control-lg', {
@@ -159,7 +159,7 @@ class Login extends Component {
     }
 }
 
-Login.propTypes = {
+LoginUser.propTypes = {
     loginUser: PropTypes.func.isRequired,
     auth: PropTypes.object.isRequired,
     errors: PropTypes.object.isRequired
@@ -171,4 +171,4 @@ const mapStateToProps = (state) => ({
 })
 
 
-export default connect(mapStateToProps, { loginUser })(Login)
+export default connect(mapStateToProps, { loginUser })(LoginUser)

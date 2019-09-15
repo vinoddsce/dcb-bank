@@ -32,10 +32,11 @@ class UserActionNavbar extends Component {
         )
         const guestLinks = (
             <MDBNavbar className="UserActionNavbar-component" dark expand="md" scrolling fixed="middle">
-                <NavLink className="btn UserActionNavbar-btn-primary" to="/welcome">Welcome</NavLink>
-
+                <NavLink className="btn UserActionNavbar-btn-primary" to="/welcome">Home</NavLink>
+                <NavLink className="btn UserActionNavbar-btn-primary" to="/about">About</NavLink>
+                <NavLink className="btn UserActionNavbar-btn-primary" to="/achievements">Achievements</NavLink>
                 <MDBNavbarNav right>
-                    <NavLink className="btn UserActionNavbar-btn-primary" to="/register">Sign Up</NavLink>
+                    {/* <NavLink className="btn UserActionNavbar-btn-primary" to="/register">Sign Up</NavLink> */}
                 </MDBNavbarNav>
 
             </MDBNavbar>

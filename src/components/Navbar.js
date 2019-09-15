@@ -6,7 +6,7 @@ import { logoutUser } from '../actions/authentication';
 
 import { MDBDropdown, MDBNavbar, MDBNavbarNav, MDBDropdownToggle, MDBDropdownMenu, MDBDropdownItem } from "mdbreact";
 
-import expressIdeaLogo from '../assets/idea_express_logo.gif';
+import expressIdeaLogo from '../assets/ideaxpress_logo.png';
 
 
 import './Navbar.css';
@@ -31,16 +31,17 @@ class Navbar extends Component {
     )
     const guestLinks = (
       <MDBNavbar className="Navbar-component" dark expand="md" scrolling fixed="middle">
-        <img src={expressIdeaLogo} width={"100px"} height={"100px"} />
-        <span className="btn Navbar-btn-primary">Idea Expressed</span>
+        <img src={expressIdeaLogo} width={"100px"} height={"70px"} />
+        {/* <span className="btn Navbar-btn-primary">Idea Expressed</span> */}
         <MDBNavbarNav right>
           <NavLink className="btn Navbar-btn-primary" to="/register">Sign Up</NavLink>
+          <NavLink className="btn Navbar-btn-primary" ></NavLink>
           <MDBDropdown >
             <MDBDropdownToggle className="btn Navbar-btn-primary" color="primary">
               Sign In
                 </MDBDropdownToggle>
             <MDBDropdownMenu className="Navbar-btn-primary-menu">
-              <MDBDropdownItem><NavLink className="Navbar-btn-primary-menu-btn" to="/login" style={{ color: '#212529' }} >User</NavLink></MDBDropdownItem>
+              <MDBDropdownItem><NavLink className="Navbar-btn-primary-menu-btn" to="/loginUser" style={{ color: '#212529' }} >User</NavLink></MDBDropdownItem>
               <MDBDropdownItem><NavLink className="Navbar-btn-primary-menu-btn" to="/login" style={{ color: '#212529' }} >Admin</NavLink></MDBDropdownItem>
             </MDBDropdownMenu>
           </MDBDropdown>

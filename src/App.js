@@ -25,6 +25,9 @@ import { PrivateRoute } from './components/PrivateRoute';
 import Welcome from './components/Welcome';
 import UserActionNavbar from './components/UserActionNavbar';
 import Footer from './components/Footer';
+import LoginUser from './components/LoginUser';
+import Achievements from './components/Achievements';
+import About from './components/About';
 
 if (localStorage.jwtToken) {
   setAuthToken(localStorage.jwtToken);
@@ -74,8 +77,11 @@ class App extends Component {
               {/* <Route path="/home" component={Home} /> */}
               <PrivateRoute path="/home" component={Home} />
               <Route path="/register" component={Register} />
+              <Route path="/loginUser" component={LoginUser} />
               <Route path="/login" component={Login} />
               <Route path="/welcome" component={Welcome} />
+              <Route path="/about" component={About} />
+              <Route path="/achievements" component={Achievements} />
             </Switch>
             <Footer />
           </div>
