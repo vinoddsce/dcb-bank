@@ -30,18 +30,18 @@ class Navbar extends Component {
       </div>
     )
     const guestLinks = (
-
-      <MDBNavbar style={{}} className="navbar navbar-dark bg-primary" dark expand="md" scrolling fixed="middle">
-        <img src={expressIdeaLogo} width={"150px"} height={"150px"} />
+      <MDBNavbar className="Navbar-component" dark expand="md" scrolling fixed="middle">
+        <img src={expressIdeaLogo} width={"100px"} height={"100px"} />
+        <span className="btn Navbar-btn-primary">Idea Expressed</span>
         <MDBNavbarNav right>
-          <NavLink className="btn btn-primary" to="/register">Sign Up</NavLink>
-          <MDBDropdown>
-            <MDBDropdownToggle caret color="primary">
+          <NavLink className="btn Navbar-btn-primary" to="/register">Sign Up</NavLink>
+          <MDBDropdown >
+            <MDBDropdownToggle className="btn Navbar-btn-primary" color="primary">
               Sign In
                 </MDBDropdownToggle>
-            <MDBDropdownMenu basic>
-              <MDBDropdownItem><NavLink className="" to="/login" style={{ color: '#212529' }} >User</NavLink></MDBDropdownItem>
-              <MDBDropdownItem><NavLink className="" to="/login" style={{ color: '#212529' }} >Admin</NavLink></MDBDropdownItem>
+            <MDBDropdownMenu className="Navbar-btn-primary-menu">
+              <MDBDropdownItem><NavLink className="Navbar-btn-primary-menu-btn" to="/login" style={{ color: '#212529' }} >User</NavLink></MDBDropdownItem>
+              <MDBDropdownItem><NavLink className="Navbar-btn-primary-menu-btn" to="/login" style={{ color: '#212529' }} >Admin</NavLink></MDBDropdownItem>
             </MDBDropdownMenu>
           </MDBDropdown>
         </MDBNavbarNav>
@@ -50,10 +50,9 @@ class Navbar extends Component {
 
     )
     return (
-
-      <nav >
+      <>
         {isAuthenticated ? authLinks : guestLinks}
-      </nav>
+      </>
 
     )
   }

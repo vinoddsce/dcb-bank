@@ -23,6 +23,8 @@ import './App.css';
 import 'bootstrap/dist/css/bootstrap.min.css';
 import { PrivateRoute } from './components/PrivateRoute';
 import Welcome from './components/Welcome';
+import UserActionNavbar from './components/UserActionNavbar';
+import Footer from './components/Footer';
 
 if (localStorage.jwtToken) {
   setAuthToken(localStorage.jwtToken);
@@ -66,6 +68,7 @@ class App extends Component {
         <Router>
           <div>
             <Navbar />
+            <UserActionNavbar />
             <Switch>
               <Route exact path="/" render={() => (<Redirect to="/welcome" />)} />
               {/* <Route path="/home" component={Home} /> */}
@@ -74,6 +77,7 @@ class App extends Component {
               <Route path="/login" component={Login} />
               <Route path="/welcome" component={Welcome} />
             </Switch>
+            <Footer />
           </div>
         </Router>
       </Provider>

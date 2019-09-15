@@ -1,3 +1,27 @@
 .Navbar-component {
-    background-color: green !important;
+    background-color: #373277 !important;
+    margin: 0 !important; 
+    padding: 0px 20px 0px 20px !important;
+}
+
+.Navbar-btn-primary {
+    color: #ffffff !important;
+    background-color: #373277 !important;
+}
+
+.Navbar-btn-primary-menu {
+    color: #ffffff !important;
+    background-color: #373277 !important;
+    border: 2px solid #ffffff !important;
+}
+
+.Navbar-btn-primary-menu-btn {
+    color: #ffffff !important;
+    background-color: #373277 !important;
+    text-decoration: none !important;
+}
+
+a {
+    background: none;
+    text-decoration: none;
 }

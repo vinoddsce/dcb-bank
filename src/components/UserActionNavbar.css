@@ -1,0 +1,23 @@
+.UserActionNavbar-component {
+    background-color: #FFD700 !important;
+    margin: 0 !important; 
+    padding: 0px 20px 0px 20px !important;
+}
+
+.UserActionNavbar-btn-primary {
+    color: #ffffff !important;
+    background-color: #FFD700 !important;
+}
+
+.UserActionNavbar-btn-primary-menu {
+    color: #ffffff !important;
+    background-color: #FFD700 !important;
+    border: 2px solid #ffffff !important;
+}
+
+.UserActionNavbar-btn-primary-menu-btn {
+    color: #ffffff !important;
+    background-color: #FFD700 !important;
+    text-decoration: none !important;
+}
+
