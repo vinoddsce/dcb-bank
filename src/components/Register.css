@@ -1,7 +1,7 @@
 .Register-component {
-    background-image: url(../assets/banking-backgroung.jpg);
+    /*background-image: url(../assets/banking-backgroung.jpg);*/
     /* Full height */
-      height: 500px; 
+      height: 596px; 
   
       /* Center and scale the image nicely */
       background-position: center;
@@ -9,6 +9,29 @@
       background-size: cover;
   }
 
+  .container {
+    text-align: center;
+  }
   .btn {
     height: 47.9883px;
   }
+    
+
+.Register{
+  margin-bottom: '50px';
+}
+
+.Reg-Header {
+  font-size: 38px;
+  font-family: 'Circular';
+  font-weight: 900;
+}
+
+.sign-up-btn {
+  color: #fff !important;
+  background-color: #373277 !important;
+  border-color: #373277 !important;
+}
+.btn-primary:focus {
+  box-shadow: 0 0 0 0.1rem rgba(255,255,255) !important;
+}

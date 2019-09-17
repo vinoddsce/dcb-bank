@@ -1,5 +1,5 @@
 .Welcome-component {
-    background-image: url(../assets/banking-backgroung.jpg);
+    /* background-image: url(../assets/banking-backgroung.jpg); */
     /* Full height */
       height: 500px; 
   
@@ -8,4 +8,8 @@
       background-repeat: repeat;
       background-size: cover;
       text-align: center !important;
+}
+
+.adText {
+  color: #ffffff;
 }

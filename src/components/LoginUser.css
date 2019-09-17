@@ -1,4 +1,4 @@
-.Login-component {
+.Login-User-component {
     /*background-image: url(../assets/banking-backgroung.jpg);*/
     /* Full height */
       height: 596px; 
@@ -9,11 +9,11 @@
       background-size: cover;
   }
 
-  .Login{
+  .Login-User{
     margin-bottom: '50px';
   }
   
-  .Login-Header {
+  .Login-User-Header {
     font-size: 38px;
     font-family: 'Circular';
     font-weight: 900;
@@ -23,7 +23,7 @@
     height: 45px;
   }
 
-  .sign-in-btn {
+  .user-sign-in-btn {
     color: #fff !important;
     background-color: #373277 !important;
     border-color: #373277 !important;

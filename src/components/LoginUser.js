@@ -4,7 +4,7 @@ import { connect } from 'react-redux';
 import { loginUser } from '../actions/authentication';
 import classnames from 'classnames';
 
-import './Login.css';
+import './LoginUser.css';
 
 class LoginUser extends Component {
 
@@ -83,75 +83,64 @@ class LoginUser extends Component {
         const { errors, signInBank, userType, bankList, password } = this.state;
         return (
 
-            <div className="Login-component">
-                <div className="container">
-                    <div className="col-sm-8 col-sm-offset-2">
-                        <div className="col-md-6 col-md-offset-3">
-                            <h2 style={{ marginBottom: '40px' }}>Login</h2>
-                            <form onSubmit={this.handleSubmit}>
-                                {/* <div className="form-group">
-                                    <select
-                                        className={classnames('form-control form-control-lg', {
-                                            'is-invalid': errors.name
-                                        })}
-                                        name="userType"
-                                        value={userType}
-                                        onChange={this.handleUserChange}
-                                    >
-                                        <option value="">Select User Access</option>
-                                        <option value="Jury">Jury</option>
-                                        <option value="Mentor">Mentor</option>
-                                    </select> 
-                                    {errors.userType && (<div className="invalid-feedback">{errors.userType}</div>)}
-                                </div> */}
-                                <div className="form-group">
-                                    <select
-                                        className={classnames('form-control form-control-lg', {
-                                            'is-invalid': errors.name
-                                        })}
-                                        name="signInBank"
-                                        value={signInBank}
-                                        onChange={this.handleDropdownChange}
-                                    >
-                                        {bankList.map((e, key) => {
-                                            return <option value={e.value} key={key} >{e.name}</option>;
-                                        })}
-                                    </select>
-                                    {errors.signInBank && (<div className="invalid-feedback">{errors.signInBank}</div>)}
+            <div className="Login-User-component">
+                <div className="container text-center">
+                    <div className="row">
+                        <div className="col-md-4 col-lg-4"></div>
+                            <div className="col-md-4 col-lg-4 col-sm-12">
+                                <div className="Login-User">
+                                    <p className="Login-User-Header">Login</p> 
                                 </div>
-                                <div className="form-group">
-                                    <input
-                                        type="email"
-                                        placeholder="Email"
-                                        className={classnames('form-control form-control-lg', {
-                                            'is-invalid': errors.email
-                                        })}
-                                        name="email"
-                                        onChange={this.handleInputChange}
-                                        value={this.state.email}
-                                    />
-                                    {errors.email && (<div className="invalid-feedback">{errors.email}</div>)}
-                                </div>
-                                <div className="form-group">
-                                    <input
-                                        type="password"
-                                        placeholder="Password"
-                                        className={classnames('form-control form-control-lg', {
-                                            'is-invalid': errors.password
-                                        })}
-                                        name="password"
-                                        onChange={this.handleInputChange}
-                                        value={password}
-                                    />
-                                    {errors.password && (<div className="invalid-feedback">{errors.password}</div>)}
-                                </div>
-                                <div className="form-group">
-                                    <button type="submit" className="btn btn-primary btn-block">
-                                        Sign In
-                                    </button>
-                                </div>
-                            </form>
-                        </div>
+                                <form onSubmit={this.handleSubmit}>
+                                    <div className="form-group">
+                                        <select
+                                            className={classnames('form-control form-control-lg', {
+                                                'is-invalid': errors.name
+                                            })}
+                                            name="signInBank"
+                                            value={signInBank}
+                                            onChange={this.handleDropdownChange}
+                                        >
+                                            {bankList.map((e, key) => {
+                                                return <option value={e.value} key={key} >{e.name}</option>;
+                                            })}
+                                        </select>
+                                        {errors.signInBank && (<div className="invalid-feedback">{errors.signInBank}</div>)}
+                                    </div>
+                                    <div className="form-group">
+                                        <input
+                                            type="email"
+                                            placeholder="Email"
+                                            className={classnames('form-control form-control-lg', {
+                                                'is-invalid': errors.email
+                                            })}
+                                            name="email"
+                                            onChange={this.handleInputChange}
+                                            value={this.state.email}
+                                        />
+                                        {errors.email && (<div className="invalid-feedback">{errors.email}</div>)}
+                                    </div>
+                                    <div className="form-group">
+                                        <input
+                                            type="password"
+                                            placeholder="Password"
+                                            className={classnames('form-control form-control-lg', {
+                                                'is-invalid': errors.password
+                                            })}
+                                            name="password"
+                                            onChange={this.handleInputChange}
+                                            value={password}
+                                        />
+                                        {errors.password && (<div className="invalid-feedback">{errors.password}</div>)}
+                                    </div>
+                                    <div className="form-group">
+                                        <button type="submit" className="btn btn-primary btn-block user-sign-in-btn">
+                                            Sign In
+                                        </button>
+                                    </div>
+                                </form>
+                            </div>
+                        <div className="col-md-4 col-lg-4"></div>
                     </div>
                 </div>
             </div>

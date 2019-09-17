@@ -31,7 +31,8 @@ class Navbar extends Component {
     )
     const guestLinks = (
       <MDBNavbar className="Navbar-component" dark expand="md" scrolling fixed="middle">
-        <img src={expressIdeaLogo} width={"100px"} height={"70px"} />
+        <NavLink className="Navbar-component-logo" to="/home"><img src={expressIdeaLogo} width={"100px"} height={"70px"} /></NavLink>
+
         {/* <span className="btn Navbar-btn-primary">Idea Expressed</span> */}
         <MDBNavbarNav right>
           <NavLink className="btn Navbar-btn-primary" to="/register">Sign Up</NavLink>

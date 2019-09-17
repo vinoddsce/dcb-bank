@@ -73,13 +73,13 @@ class App extends Component {
             <Navbar />
             <UserActionNavbar />
             <Switch>
-              <Route exact path="/" render={() => (<Redirect to="/welcome" />)} />
+              <Route exact path="/" render={() => (<Redirect to="/home" />)} />
               {/* <Route path="/home" component={Home} /> */}
-              <PrivateRoute path="/home" component={Home} />
+              {/* <PrivateRoute path="/home" component={Home} /> */}
               <Route path="/register" component={Register} />
               <Route path="/loginUser" component={LoginUser} />
               <Route path="/login" component={Login} />
-              <Route path="/welcome" component={Welcome} />
+              <Route path="/home" component={Welcome} />
               <Route path="/about" component={About} />
               <Route path="/achievements" component={Achievements} />
             </Switch>

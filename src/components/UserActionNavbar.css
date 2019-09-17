@@ -1,23 +1,32 @@
 .UserActionNavbar-component {
-    background-color: #FFD700 !important;
+    background-color: #D3D3D3 !important;
     margin: 0 !important; 
     padding: 0px 20px 0px 20px !important;
 }
 
 .UserActionNavbar-btn-primary {
-    color: #ffffff !important;
-    background-color: #FFD700 !important;
+    color: #373277 !important;
+    background-color:#D3D3D3 !important;
+    font-weight: 600;
+    font-size: 20px;
+    font-style: 'Circular'
 }
 
 .UserActionNavbar-btn-primary-menu {
-    color: #ffffff !important;
-    background-color: #FFD700 !important;
+    color: #373277 !important;
+    background-color: #D3D3D3 !important;
     border: 2px solid #ffffff !important;
+    font-weight: 600;
+    font-size: 20px;
+    font-style: 'Circular'
 }
 
 .UserActionNavbar-btn-primary-menu-btn {
-    color: #ffffff !important;
-    background-color: #FFD700 !important;
+    color: #373277 !important;
+    background-color:#D3D3D3 !important;
     text-decoration: none !important;
+    font-weight: 600;
+    font-size: 20px;
+    font-style: 'Circular'
 }
 

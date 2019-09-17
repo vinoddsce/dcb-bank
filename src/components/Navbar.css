@@ -9,6 +9,15 @@
     background-color: #373277 !important;
 }
 
+.Navbar-component-logo {
+    background-color: #373277 !important;
+    margin: 0 !important; 
+}
+
+.Navbar-component-logo:active {
+    background-color: #373277 !important;
+}
+
 .Navbar-btn-primary-menu {
     color: #ffffff !important;
     background-color: #373277 !important;
@@ -19,6 +28,16 @@
     color: #ffffff !important;
     background-color: #373277 !important;
     text-decoration: none !important;
+}
+
+.Navbar-btn-primary-menu-btn:hover {
+    color: #373277 !important;
+    background-color: #ffffff !important;
+}
+
+.Navbar-btn-primary-menu-btn:active {
+    color: #373277 !important;
+    background-color: #ffffff !important;
 }
 
 a {

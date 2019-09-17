@@ -2,6 +2,7 @@
   background-color: #000000 !important;
   margin: 0 !important; 
   padding: 0px 20px 0px 20px !important;
+  bottom: 0;
 }
 
 .Footer-btn-primary {
@@ -23,4 +24,13 @@
 a {
   background: none;
   text-decoration: none;
+}
+
+@media screen and (width: 767px){
+  .Footer-component {
+    background-color: #000000 !important;
+    margin: 0 !important; 
+    padding: 0px 20px 0px 20px !important;
+    bottom: 0;
+  }
 }

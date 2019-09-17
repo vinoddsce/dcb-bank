@@ -7,7 +7,7 @@ class About extends Component {
     }
     render() {
         return (
-            <div style={{ width: '100%', height: '380px', padding: '50px 20px' }}>
+            <div style={{ width: '100%', height: '567px', padding: '50px 20px' }}>
                 <p>About Under Construction</p>
             </div>
         );
