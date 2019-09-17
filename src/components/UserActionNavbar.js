@@ -1,13 +1,11 @@
 
 import React, { Component } from 'react';
-import { Link, NavLink } from 'react-router-dom';
+import { NavLink } from 'react-router-dom';
 import PropTypes from 'prop-types';
 import { connect } from 'react-redux';
 import { logoutUser } from '../actions/authentication';
 
-import { MDBDropdown, MDBNavbar, MDBNavbarNav, MDBDropdownToggle, MDBDropdownMenu, MDBDropdownItem } from "mdbreact";
-
-import expressIdeaLogo from '../assets/idea_express_logo.gif';
+import { MDBNavbar, MDBNavbarNav } from "mdbreact";
 
 
 import './UserActionNavbar.css';
@@ -32,7 +30,7 @@ class UserActionNavbar extends Component {
         )
         const guestLinks = (
             <MDBNavbar className="UserActionNavbar-component" dark expand="md" scrolling fixed="middle">
-                <NavLink className="btn UserActionNavbar-btn-primary" to="/welcome">Home</NavLink>
+                <NavLink className="btn UserActionNavbar-btn-primary" to="/home">Home</NavLink>
                 <NavLink className="btn UserActionNavbar-btn-primary" to=""></NavLink>
                 <NavLink className="btn UserActionNavbar-btn-primary" to="/about">About</NavLink>
                 <NavLink className="btn UserActionNavbar-btn-primary" to=""></NavLink>

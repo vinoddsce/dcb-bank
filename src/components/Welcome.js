@@ -52,6 +52,8 @@ class Welcome extends Component {
                 </div>
                 <marquee style={{ color: '#ffffff' }}>Effective 1st Sept'19 , TDS of 2% is applicable on cash withdraw exceeding Rs.1 Cr in a financial year. Read more on Click Here</marquee>
                 {/* <img src={banking} /> */}
+                <h1>About</h1>
+                <p>Despite being a cheaper mode of transportation, people are preferring a private car over public transportation.</p>
                 <div style={{ marginRight: '750px' }}>
                     <h2 style={{ color: '#ffffff' }}>Trending News</h2>
                 </div>
