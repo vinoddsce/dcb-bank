@@ -1,4 +1,5 @@
 import React, { Component } from 'react';
+import UserActionNavbar from './UserActionNavbar';
 
 class Achievements extends Component {
     constructor(props) {
@@ -8,6 +9,7 @@ class Achievements extends Component {
     render() {
         return (
             <div style={{ width: '100%', height: '567px', padding: '50px 20px' }}>
+                <UserActionNavbar />
                 <p>Achievements Under Construction</p>
             </div>
         );

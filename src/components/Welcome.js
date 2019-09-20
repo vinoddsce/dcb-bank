@@ -8,6 +8,10 @@ import 'react-animated-slider/build/horizontal.css';
 import 'normalize.css/normalize.css';
 import './slider-animations.css';
 
+import backgroudVideo from '../assets/background.mov';
+
+import UserActionNavbar from './UserActionNavbar';
+
 const content = [
     {
         title: 'Vulputate Mollis Ultricies Fermentum Parturient',
@@ -46,8 +50,23 @@ class Welcome extends Component {
     render() {
         return (
             <div className="Welcome-component" style={{ width: "100%", height: "100%" }} >
+                <header>
+                    <div className="overlay"></div>
+                    <video playsinline="playsinline" autoplay="autoplay" muted="muted" loop="loop">
+                        <source src={backgroudVideo} type="video/mp4" />
+                    </video>
+                    <div className="container h-100">
+                        <div className="d-flex h-100 text-center align-items-center">
+                            <div className="w-100 text-white">
+                                <UserActionNavbar />
+                                <h1 className="display-3">Video Header</h1>
+                                <p className="lead mb-0">With HTML5 Video and Bootstrap 4</p>
+                            </div>
+                        </div>
+                    </div>
+                </header>
                 <div style={{ display: 'flex', justifyContent: 'left', alignItems: 'left', height: '70vh', marginLeft: '100px', paddingTop: '30px' }}>
-                    <ReactPlayer url="https://www.youtube.com/watch?v=fTTGALaRZoc" playing />
+                    {/* <ReactPlayer url="https://www.youtube.com/watch?v=fTTGALaRZoc" playing /> */}
 
                 </div>
                 <marquee style={{ color: '#ffffff' }}>Effective 1st Sept'19 , TDS of 2% is applicable on cash withdraw exceeding Rs.1 Cr in a financial year. Read more on Click Here</marquee>

@@ -71,7 +71,7 @@ class App extends Component {
         <Router>
           <div>
             <Navbar />
-            <UserActionNavbar />
+
             <Switch>
               <Route exact path="/" render={() => (<Redirect to="/home" />)} />
               {/* <Route path="/home" component={Home} /> */}
