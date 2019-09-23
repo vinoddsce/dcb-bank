@@ -61,3 +61,97 @@ header .overlay {
     display: none;
   }
 }
+
+.secOne {
+  background-color: #fbfbfd;
+  position: relative;
+  padding: 100px 0px 100px 0px;
+}
+
+.divOne{
+  max-width: 1140px;
+  display: flex;
+  margin-right: auto;
+  margin-left: auto;
+  position: relative;
+}
+
+.elementor-row{
+  display: flex;
+  width: 100%;
+}
+
+.secOneContainer{
+  position: relative;
+  min-height: 1px;
+  display: flex;
+}
+
+.elementor-column-wrap{
+  padding: 10px;
+  width: 100%;
+  position: relative;
+  display: flex;
+}
+
+.elementor-widget-wrap{
+  display: flex;
+  position: relative;
+  width: 100%;
+  flex-wrap: wrap;
+  align-content: flex-start;
+}
+
+.secOneHeader{
+  text-align: center;
+  position: relative;
+  width: 100%;
+}
+
+.elementor-heading-title{
+  font-family: "Poppins", Sans-serif;
+  font-weight: 500;
+  color: #4c5267;
+  font-size: 2rem;
+  margin: 0;
+  line-height: 1;
+  width: 100%;
+}
+
+.element-text{
+  font-family: "Open Sans", Sans-serif;
+  font-size: 18px;
+  width: 100%;
+  font-weight: 300;
+  padding: 20px 10px 0px 10px;
+  text-align: center;
+  columns: 1;
+}
+
+.text-content{
+  color: #808285;
+}
+
+.box-section{
+  margin-top: 30px;
+  margin-bottom: 10px;
+  width: 100%;
+  position: relative;
+}
+
+@media screen and (max-width: 767px){
+  .secOne {
+    margin-top: 0px;
+    margin-bottom: 0px;
+    padding: 50px 0px 0px 0px;
+  }
+  .secOneContainer{
+    width: 100%;
+  }
+}
+
+@media screen and (max-width: 1024px){
+  .elementor-row {
+    flex-wrap: wrap;
+  }
+}

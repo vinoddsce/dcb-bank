@@ -69,35 +69,30 @@ class Welcome extends Component {
                     {/* <ReactPlayer url="https://www.youtube.com/watch?v=fTTGALaRZoc" playing /> */}
 
                 </div>
-                <marquee style={{ color: '#ffffff' }}>Effective 1st Sept'19 , TDS of 2% is applicable on cash withdraw exceeding Rs.1 Cr in a financial year. Read more on Click Here</marquee>
-                {/* <img src={banking} /> */}
-                <h1>About</h1>
-                <p>Despite being a cheaper mode of transportation, people are preferring a private car over public transportation.</p>
-                <div style={{ marginRight: '750px' }}>
-                    <h2 style={{ color: '#ffffff' }}>Trending News</h2>
-                </div>
-                <Slider className="slider-wrapper">
-                    {content.map((item, index) => (
-                        <div
-                            key={index}
-                            className="slider-content"
-                            style={{ background: `url('${item.image}') no-repeat center center` }}
-                        >
-                            <div className="inner">
-                                <h1>{item.title}</h1>
-                                <p>{item.description}</p>
-                                <button>{item.button}</button>
+
+                <section className="secOne" data-element_type="section">
+                    <div className="divOne">
+                        <div className="elementor-row">
+                            <div className="secOneContainer">
+                                <div className="elementor-column-wrap">
+                                    <div className="elementor-widget-wrap">
+                                        <div className="secOneHeader">
+                                            <h2 className="elementor-heading-title">
+                                                WHAT IS IDEA EXPRESS?
+                                            </h2>
+                                        </div>
+                                        <div className="element-text">
+                                        <p className="text-content">At T-Hub, we pioneer India’s leading innovation ecosystem. We synergise startups, corporations, governments, academia and investors to drive transformative change. Our innovation ecosystem stands firmly on seven key pillars bridging the gap between visionary entrepreneurs and corporates seeking the next big idea, and everyone in between.</p>
+                                        </div>
+                                        <section className="box-section">
+
+                                        </section>
+                                    </div>
+                                </div>
                             </div>
-                            {/* <section>
-                                <img src={item.userProfile} alt={item.user} />
-                                <span>
-                                    Posted by <strong>{item.user}</strong>
-                                </span>
-                            </section> */}
                         </div>
-                    ))}
-                </Slider>
-                <HomePageNewsSection />
+                    </div>
+                </section>
             </ div >
         );
     }
