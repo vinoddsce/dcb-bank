@@ -1,12 +1,14 @@
 .Navbar-component {
-    background-color: #ef4723 !important;
+    background-color: #ffffff !important;
     margin: 0 !important; 
     padding: 0px 20px 0px 0px !important;
+    
 }
 
 .Navbar-btn-primary {
-    color: #ffffff !important;
-    background-color: #ef4723 !important;
+    color: #ef4723 !important;
+    background-color: #ffffff !important;
+    font-weight: normal !important;
 }
 
 .Navbar-component-logo {
@@ -63,7 +65,7 @@
 }
 
 .Navbar-btn-primary-menu-btn:active {
-    color: #373277 !important;
+    color: #ef4723 !important;
     background-color: #ffffff !important;
 }
 

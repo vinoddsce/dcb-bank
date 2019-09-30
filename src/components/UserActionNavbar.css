@@ -1,14 +1,14 @@
 .UserActionNavbar-component {
     background-color: transparent !important;
     margin: 0 !important; 
-    padding: 0px 20px 0px 20px !important;
+    padding: 0px 20px 0px 0px !important;
 }
 
 .UserActionNavbar-btn-primary {
     color: #ffffff !important;
     background-color: transparent !important;
-    font-weight: 600;
-    font-size: 20px;
+    font-weight: normal !important;
+    font-size: 1rem !important;
     font-style: 'Circular'
 }
 
@@ -16,8 +16,8 @@
     color: #ffffff !important;
     background-color: transparent !important;
     border: 2px solid #ffffff !important;
-    font-weight: 600;
-    font-size: 20px;
+    font-weight: normal !important;
+    font-size: 1rem !important;
     font-style: 'Circular'
 }
 
@@ -25,8 +25,8 @@
     color: #ffffff !important;
     background-color: transparent !important;
     text-decoration: none !important;
-    font-weight: 600;
-    font-size: 20px;
+    font-weight: normal !important;
+    font-size: 1rem !important;
     font-style: 'Circular'
 }
 

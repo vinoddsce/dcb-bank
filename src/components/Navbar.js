@@ -42,7 +42,7 @@ class Navbar extends Component {
           <NavLink className="btn Navbar-btn-primary" to="/register">Sign Up</NavLink>
           <NavLink className="btn Navbar-btn-primary" ></NavLink>
           <MDBDropdown >
-            <MDBDropdownToggle className="btn Navbar-btn-primary" color="primary">
+            <MDBDropdownToggle className="Navbar-btn-primary" >
               Sign In
                 </MDBDropdownToggle>
             <MDBDropdownMenu className="Navbar-btn-primary-menu">

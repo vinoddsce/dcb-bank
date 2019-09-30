@@ -1,7 +1,7 @@
 .Welcome-component {
-    background-clip: url(../assets/background.mov);
+  background: url(../assets/background.mov) #ffffff repeat center center scroll;
     /* Full height */
-      height: 500px; 
+      height: 100%; 
   
       /* Center and scale the image nicely */
       background-position: center;
@@ -10,6 +10,7 @@
       text-align: center !important;
 }
 
+
 .adText {
   color: #ffffff;
 }
@@ -17,7 +18,7 @@
 header {
   position: relative;
   color: #ffffff;
-  height: 175vh;
+  height: 110vh;
   min-height: 25rem;
   width: 100%;
   overflow: hidden;
@@ -28,7 +29,7 @@ header video {
   top: 50%;
   left: 50%;
   min-width: 100%;
-  min-height: 100%;
+  min-height: 50%;
   width: auto;
   height: auto;
   z-index: 0;
@@ -39,7 +40,8 @@ header video {
 }
 
 header .container {
-  position: relative;
+  position: absolute;
+  height: auto !important;
   z-index: 2;
 }
 
@@ -47,111 +49,38 @@ header .overlay {
   position: absolute;
   top: 0;
   left: 0;
-  height: 100%;
+  height: 50%;
   width: 100%;
   opacity: 0.5;
   z-index: 1;
 }
 
+
+.main-title-section {
+  position: relative;
+  width: 50%;
+  bottom: 40%;
+  left: 10%;
+  line-height: 1.1;
+  text-align: left !important;
+  margin-top: 100px !important;
+}
+
+.hp-bnr-title-1 {
+  font-family: Poppins,Sans-serif;
+  font-weight: 500;
+  font-size: 60px!important;
+  text-shadow: -3px -2px 0 rgba(0,0,0,.25);
+  padding: 0;
+  margin: 0;
+}
+
 @media (pointer: coarse) and (hover: none) {
   header {
-    background: url('https://source.unsplash.com/XT5OInaElMw/1600x900') black no-repeat center center scroll;
+    background: url(../assets/background.mov) #ffffff repeat center center scroll;
   }
   header video {
     display: none;
   }
 }
 
-.secOne {
-  background-color: #fbfbfd;
-  position: relative;
-  padding: 100px 0px 100px 0px;
-}
-
-.divOne{
-  max-width: 1140px;
-  display: flex;
-  margin-right: auto;
-  margin-left: auto;
-  position: relative;
-}
-
-.elementor-row{
-  display: flex;
-  width: 100%;
-}
-
-.secOneContainer{
-  position: relative;
-  min-height: 1px;
-  display: flex;
-}
-
-.elementor-column-wrap{
-  padding: 10px;
-  width: 100%;
-  position: relative;
-  display: flex;
-}
-
-.elementor-widget-wrap{
-  display: flex;
-  position: relative;
-  width: 100%;
-  flex-wrap: wrap;
-  align-content: flex-start;
-}
-
-.secOneHeader{
-  text-align: center;
-  position: relative;
-  width: 100%;
-}
-
-.elementor-heading-title{
-  font-family: "Poppins", Sans-serif;
-  font-weight: 500;
-  color: #4c5267;
-  font-size: 2rem;
-  margin: 0;
-  line-height: 1;
-  width: 100%;
-}
-
-.element-text{
-  font-family: "Open Sans", Sans-serif;
-  font-size: 18px;
-  width: 100%;
-  font-weight: 300;
-  padding: 20px 10px 0px 10px;
-  text-align: center;
-  columns: 1;
-}
-
-.text-content{
-  color: #808285;
-}
-
-.box-section{
-  margin-top: 30px;
-  margin-bottom: 10px;
-  width: 100%;
-  position: relative;
-}
-
-@media screen and (max-width: 767px){
-  .secOne {
-    margin-top: 0px;
-    margin-bottom: 0px;
-    padding: 50px 0px 0px 0px;
-  }
-  .secOneContainer{
-    width: 100%;
-  }
-}
-
-@media screen and (max-width: 1024px){
-  .elementor-row {
-    flex-wrap: wrap;
-  }
-}
