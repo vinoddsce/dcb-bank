@@ -63,23 +63,45 @@ class Welcome extends Component {
                         </div>
                     </div>
                 </header>
-
-                <section class="elementor-element elementor-element-56730e5 elementor-section-boxed elementor-section-height-default elementor-section-height-default elementor-section elementor-top-section" data-id="56730e5" data-element_type="section" data-settings="{&quot;background_background&quot;:&quot;classic&quot;}">
-
-                </section>
-                <section class="elementor-element elementor-element-254ede0 elementor-section-boxed elementor-section-height-default elementor-section-height-default elementor-section elementor-top-section" data-id="254ede0" data-element_type="section">
-                    <div class="elementor-container elementor-column-gap-default">
-                        <div class="elementor-row">
-                            <div class="elementor-element elementor-element-e27d3db elementor-column elementor-col-100 elementor-top-column" data-id="e27d3db" data-element_type="column">
-                                <div class="elementor-column-wrap">
-                                    <div class="elementor-widget-wrap">
+                <section className="secOne" data-element_type="section">
+                    <div className="divOne">
+                        <div className="elementor-row">
+                            <div className="secOneContainer">
+                                <div className="elementor-column-wrap">
+                                    <div className="elementor-widget-wrap">
+                                        <div className="secOneHeader">
+                                            <h2 className="elementor-heading-title">
+                                                WHAT IS IDEA EXPRESS?
+                                            </h2>
+                                        </div>
+                                        <div className="element-text">
+                                            <p className="text-content">At T-Hub, we pioneer India’s leading innovation ecosystem. We synergise startups, corporations, governments, academia and investors to drive transformative change. Our innovation ecosystem stands firmly on seven key pillars bridging the gap between visionary entrepreneurs and corporates seeking the next big idea, and everyone in between.</p>
+                                        </div>
+                                        <section className="box-section">
+                                            <div className="elementor-container">
+                                                <div className="elementor-row">
+                                                    <div className="each-box">
+                                                        <div className="each-box-wrap">
+                                                            <div className="premium-img-layers-wrapper">
+                                                                <ul>
+                                                                    <li className="img-wrapper">
+                                                                        <img src="https://t-hub.co/wp-content/uploads/2019/07/01-leadership-1.png" className="premium-img-layers-image">
+                                                                        </img>
+                                                                    </li>
+                                                                </ul>
+                                                            </div>
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </section>
                                     </div>
                                 </div>
                             </div>
                         </div>
                     </div>
                 </section>
-
+              
 
                 <div style={{ display: 'flex', justifyContent: 'left', alignItems: 'left', height: '70vh', marginLeft: '100px', paddingTop: '30px' }}>
                     {/* <ReactPlayer url="https://www.youtube.com/watch?v=fTTGALaRZoc" playing /> */}

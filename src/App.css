@@ -133,4 +133,78 @@ input:checked + .slider:before {
 }
 
 
+.Navbar-component {
+  background-color: #ffffff !important;
+  margin: 0 !important; 
+  padding: 0px 20px 0px 0px !important;
+  
+}
 
+.Navbar-btn-primary {
+  color: #ef4723 !important;
+  background-color: #ffffff !important;
+  font-weight: normal !important;
+}
+
+.Navbar-component-logo {
+  background-color: #ffffff !important;
+  /* margin: 0 !important;  */
+  /* padding-left: 20px; */
+  margin: 0px 0px 0px 0px !important;
+  padding: 22px 0px 22px 035px;
+  height: 100%;
+  background-position: top left;
+  background-repeat: no-repeat;
+  background-size: contain;
+  background-size: cover;
+  border-top-right-radius: 100% 50%;
+  border-bottom-right-radius: 20% 50%;
+}
+
+.Navbar-component-logo-container {
+  background-color: #ffffff !important;
+  /* margin: 0 !important;  */
+  /* padding-left: 20px; */
+  margin: 0px 0px 0px 0px !important;
+  
+  
+  background-position: top left;
+  background-repeat: no-repeat;
+  background-size: contain;
+  background-size: cover;
+/* border-bottom-right-radius: 0% 00%; */
+border-top-right-radius: 50%;
+border-top-right-radius: 20% 50%;
+border-bottom-right-radius: 20% 50%;
+}
+
+.Navbar-component-logo:active {
+  background-color: #ffffff !important;
+}
+
+.Navbar-btn-primary-menu {
+  color: #ffffff !important;
+  background-color: #ffffff !important;
+  border: 2px solid #ffffff !important;
+}
+
+.Navbar-btn-primary-menu-btn {
+  color: #ef4723 !important;
+  background-color: #ffffff !important;
+  text-decoration: none !important;
+}
+
+.Navbar-btn-primary-menu-btn:hover {
+  color: #ef4723 !important;
+  background-color: #ffffff !important;
+}
+
+.Navbar-btn-primary-menu-btn:active {
+  color: #ef4723 !important;
+  background-color: #ffffff !important;
+}
+
+a {
+  background: none;
+  text-decoration: none;
+}

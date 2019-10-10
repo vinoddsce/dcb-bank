@@ -18,6 +18,10 @@ import Register from './components/Register';
 import Login from './components/Login';
 
 
+import { MDBDropdown, MDBNavbar, MDBNavbarNav, MDBDropdownToggle, MDBDropdownMenu, MDBDropdownItem } from "mdbreact";
+
+import expressIdeaLogo from './assets/ideaxpress_logo.png';
+
 import './App.css';
 
 import 'bootstrap/dist/css/bootstrap.min.css';
@@ -70,7 +74,29 @@ class App extends Component {
       <Provider store={store}>
         <Router>
           <div>
-            <Navbar />
+          <MDBNavbar className="Navbar-component" dark expand="md" scrolling fixed="middle">
+
+<div className="Navbar-component-logo-container">
+  <Link className="Navbar-component-logo" to="/home"><img src={expressIdeaLogo} width={"100px"} height={"70px"} /></Link>
+</div>
+
+
+{/* <span className="btn Navbar-btn-primary">Idea Expressed</span> */}
+<MDBNavbarNav right>
+  <NavLink className="btn Navbar-btn-primary" to="/register">Sign Up</NavLink>
+  <Link className="btn Navbar-btn-primary" ></Link>
+  <MDBDropdown >
+    <MDBDropdownToggle className="Navbar-btn-primary" >
+      Sign In
+        </MDBDropdownToggle>
+    <MDBDropdownMenu className="Navbar-btn-primary-menu">
+      <MDBDropdownItem><Link className="Navbar-btn-primary-menu-btn" to="/loginUser" style={{ color: '#212529' }} >User</Link></MDBDropdownItem>
+      <MDBDropdownItem><Link className="Navbar-btn-primary-menu-btn" to="/login" style={{ color: '#212529' }} >Admin</Link></MDBDropdownItem>
+    </MDBDropdownMenu>
+  </MDBDropdown>
+</MDBNavbarNav>
+
+</MDBNavbar>
 
             <Switch>
               <Route exact path="/" render={() => (<Redirect to="/home" />)} />
